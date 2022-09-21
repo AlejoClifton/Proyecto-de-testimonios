@@ -1,0 +1,21 @@
+@use "components/mixins";
+@use "components/colors";
+@use "components/header";
+@use "components/main";
+@use "components/footer";
+@use "components/formTest";
+@use "components/responsive";
+
+* {
+    @include mixins.padinMargin(0px, 0px);
+    font-family: Georgia;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    background-color: colors.$Fondo;
+}
+
+

@@ -1,0 +1,9 @@
+@use 'mixins';
+@use 'colors';
+.footer {
+    @include mixins.padinMargin(30px, 0px);
+    background-color: black;
+    p {
+        @include mixins.textStyles(20px,white,'',center,'');
+    }
+}

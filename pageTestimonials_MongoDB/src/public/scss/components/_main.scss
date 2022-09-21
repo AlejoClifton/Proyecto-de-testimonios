@@ -1,0 +1,153 @@
+@use "mixins";
+@use "colors";
+
+#list-Products {
+    margin-top: 30px;
+    @include mixins.flexBoxStyles(row, space-evenly, wrap, center, "");
+    li {
+        transition: 0.5s;
+        @include mixins.flexBoxStyles(column, "", "", "", "");
+        height: 600px;
+        @extend %boxShadow;
+        background-color: white;
+        width: calc(100% / 5);
+        @include mixins.padinMargin(10px, 10px);
+        h2 {
+            @extend %textoPD;
+            font-size: 20px;
+        }
+        h3 {
+            @include mixins.textStyles(25px, "", "", center, "");
+            @include mixins.padinMargin(10px, "");
+        }
+        img {
+            width: 60%;
+            margin: auto;
+            height: 60%;
+            object-fit: contain;
+        }
+        p {
+            @include mixins.textStyles(20px, "", "", center, "");
+            @include mixins.padinMargin(10px, 10px);
+            height: 10%;
+        }
+        &:hover {
+            transition: 0.3;
+            transform: scale(1.05);
+            @extend %boxShadowHover;
+        }
+    }
+}
+.titleTest {
+    margin: auto;
+    margin-top: 60px;
+    font-size: 30px;
+    width: 60%;
+}
+.containerSlider {
+    position: relative;
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    user-select: none;
+    @extend %boxShadow;
+    background-color: colors.$Fondo_Header;
+
+    ul.slider {
+        height: inherit;
+        width: 100%;
+        @include mixins.flexBoxStyles(row, "", nowrap, "", "");
+        overflow: hidden;
+        > li {
+            width: inherit;
+            height: 100%;
+            @include mixins.flexBoxStyles(column, center, wrap, center, "");
+            flex-shrink: 0;
+            font-size: 20px;
+            transition: 1s;
+            > h2 {
+                text-align: center;
+                width: 50%;
+                margin-top: 50px;
+            }
+            > p {
+                @extend %margenAuto;
+                @include mixins.textStyles(25px,colors.$ColorFuenteAzul,"",center,"");
+            }
+            > a {
+                width: 45%;
+                text-align: center;
+                margin-bottom: 30px;
+                > i.link {
+                    @include mixins.textStyles(50px, colors.$ColorFuenteAzul, "", '', "");
+                    transition: 0.3;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+    > a.sendForm {
+        position: absolute;
+        @extend %boxShadow;
+        font-size: 15px;
+        padding: 15px;
+        top: 0px;
+        right: 0px;
+        transition: 0.3s;
+        color: colors.$ColorFuentePD;
+        background-color: colors.$Fondo_Header_Oscurito;
+        z-index: 10001;
+        &:hover {
+            transform: scale(1.2);
+            color: black;
+            @extend %boxShadowHover;
+        }
+    }
+    > div {
+        position: absolute;
+        @extend %boxShadow;
+        background-color: colors.$Fondo_Header_Oscurito;
+        border-radius: 50%;
+        padding: 15px;
+        top: 120px;
+        transition: 0.3s;
+        z-index: 10000;
+    }
+    > div:hover {
+        @extend %boxShadowHover;
+    }
+    > #nextSlide {
+        font-size: 30px;
+        right: 0;
+    }
+    > #previousSlide {
+        font-size: 30px;
+        left: 0;
+    }
+}
+
+.titleNew{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.nuevoTestimonio{
+    width: 40%;
+    margin: auto;
+    @extend %boxShadowHover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    h2{
+        @include mixins.textStyles(25px, "", "", center, "");
+        @include mixins.padinMargin(10px, "");
+    }
+    p{
+        @include mixins.textStyles(20px, "", "", center, "");
+        @include mixins.padinMargin(10px, 10px);
+    }
+}

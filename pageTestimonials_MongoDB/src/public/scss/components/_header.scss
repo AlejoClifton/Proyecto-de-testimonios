@@ -1,0 +1,32 @@
+@use "mixins";
+@use "colors";
+
+.header {
+    margin-top: -5px;
+    background-color: colors.$Fondo_Header;
+}
+
+.title {
+    @include mixins.padinMargin(10px, 5px);
+    color: colors.$ColorFuentePD;
+}
+
+.nav {
+    @include mixins.padinMargin(10px, 5px);
+    > ul {
+        @include mixins.padinMargin(5px, 5px);
+        @include mixins.flexBoxStyles(row, space-evenly, wrap, center, "");
+        > li {
+            > a {
+                @include mixins.padinMargin(5px, "");
+                transition: 0.3s;
+                @include mixins.textStyles(25px, #28537c, center, center, "");
+                &:hover {
+                    color: colors.$ColorFuentePD;
+                    background-color: colors.$Fondo_Header_Oscurito;
+                    border-radius: 1em;
+                }
+            }
+        }
+    }
+}
