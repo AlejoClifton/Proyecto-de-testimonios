@@ -1,0 +1,27 @@
+{
+  "name": "websita",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Página web con testimonios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monderks/pageTestimonials.git"
+  },
+  "author": "Alejo Clifton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Monderks/pageTestimonials/issues"
+  },
+  "homepage": "https://github.com/Monderks/pageTestimonials#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {}
+}

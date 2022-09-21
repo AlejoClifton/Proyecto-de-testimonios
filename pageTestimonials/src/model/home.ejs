@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <%- include('components/_header'); %>
+        <main>
+            <section>
+                <ul id="list-Products"></ul>
+            </section>
+            <h2 class="titleTest">Testimonios</h2>
+            <div id="Testimonios" class="containerSlider">
+                <a href="/sendForm" class="sendForm">Enviar Testimonio</a>
+                <div id="previousSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <ul class="testimonials slider">
+                    <%- include('components/_testimonials'); %>
+                </ul>
+                <div id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"><%- include('components/_footer'); %></footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

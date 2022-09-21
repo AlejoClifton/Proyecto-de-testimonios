@@ -1,0 +1,42 @@
+@use 'colors';
+
+@mixin flexBoxStyles($direction, $js-cont:normal, $wrap:normal, $al-items:normal, $al-content:normal) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $js-cont;
+    flex-wrap: $wrap;
+    align-items: $al-items;
+    align-content: $al-content;
+}
+
+@mixin textStyles($font-size: 12px, $color: white, $al-items: normal, $tx-align: normal, $decoracion: normal) {
+    font-size: $font-size;
+    color: $color;
+    align-items: $al-items;
+    text-align: $tx-align;
+    text-decoration: $decoracion;
+}
+
+@mixin padinMargin($padding:0px, $margin:0px) {
+    padding: $padding;
+    margin: $margin;
+}
+
+%boxShadow{
+    box-shadow: 1px 1px 10px -5px grey;
+}
+
+%boxShadowHover {
+    box-shadow: 1px 0px 10px 3px grey;;
+}
+
+%textoPD {
+    @include textStyles(25px, colors.$ColorFuentePD, center, center, none);
+    @include padinMargin(10px, 10px);
+    line-height: 3rem;
+}
+
+%margenAuto {
+    width: 80%;
+    margin: auto;
+}

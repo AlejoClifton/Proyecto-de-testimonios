@@ -1,0 +1,500 @@
+#list-Products li, .containerSlider, .containerSlider > a.sendForm, .containerSlider > div {
+  box-shadow: 1px 1px 10px -5px grey;
+}
+
+#list-Products li:hover, .containerSlider > a.sendForm:hover, .containerSlider > div:hover, .nuevoTestimonio {
+  box-shadow: 1px 0px 10px 3px grey;
+}
+
+#list-Products li h2 {
+  font-size: 25px;
+  color: #0e263d;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  line-height: 3rem;
+}
+
+.containerSlider ul.slider > li > p {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  margin-top: -5px;
+  background-color: #FFF159;
+}
+
+.title {
+  padding: 10px;
+  margin: 5px;
+  color: #0e263d;
+}
+
+.nav {
+  padding: 10px;
+  margin: 5px;
+}
+.nav > ul {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: "";
+}
+.nav > ul > li > a {
+  padding: 5px;
+  margin: "";
+  transition: 0.3s;
+  font-size: 25px;
+  color: #28537c;
+  align-items: center;
+  text-align: center;
+  text-decoration: "";
+}
+.nav > ul > li > a:hover {
+  color: #0e263d;
+  background-color: #f3e654;
+  border-radius: 1em;
+}
+
+#list-Products {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: "";
+}
+#list-Products li {
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: "";
+  flex-wrap: "";
+  align-items: "";
+  align-content: "";
+  height: 600px;
+  background-color: white;
+  width: calc(100% / 5);
+  padding: 10px;
+  margin: 10px;
+}
+#list-Products li h2 {
+  font-size: 20px;
+}
+#list-Products li h3 {
+  font-size: 25px;
+  color: "";
+  align-items: "";
+  text-align: center;
+  text-decoration: "";
+  padding: 10px;
+  margin: "";
+}
+#list-Products li img {
+  width: 60%;
+  margin: auto;
+  height: 60%;
+  object-fit: contain;
+}
+#list-Products li p {
+  font-size: 20px;
+  color: "";
+  align-items: "";
+  text-align: center;
+  text-decoration: "";
+  padding: 10px;
+  margin: 10px;
+  height: 10%;
+}
+#list-Products li:hover {
+  transition: 0.3;
+  transform: scale(1.05);
+}
+
+.titleTest {
+  margin: auto;
+  margin-top: 60px;
+  font-size: 30px;
+  width: 60%;
+}
+
+.containerSlider {
+  position: relative;
+  height: 300px;
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  user-select: none;
+  background-color: #FFF159;
+}
+.containerSlider ul.slider {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: "";
+  flex-wrap: nowrap;
+  align-items: "";
+  align-content: "";
+  overflow: hidden;
+}
+.containerSlider ul.slider > li {
+  width: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: "";
+  flex-shrink: 0;
+  font-size: 20px;
+  transition: 1s;
+}
+.containerSlider ul.slider > li > h2 {
+  text-align: center;
+  width: 50%;
+  margin-top: 50px;
+}
+.containerSlider ul.slider > li > p {
+  font-size: 25px;
+  color: #164775;
+  align-items: "";
+  text-align: center;
+  text-decoration: "";
+}
+.containerSlider ul.slider > li > a {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.containerSlider ul.slider > li > a > i.link {
+  font-size: 50px;
+  color: #164775;
+  align-items: "";
+  text-align: "";
+  text-decoration: "";
+  transition: 0.3;
+}
+.containerSlider ul.slider > li > a > i.link:hover {
+  transform: scale(1.2);
+}
+.containerSlider > a.sendForm {
+  position: absolute;
+  font-size: 15px;
+  padding: 15px;
+  top: 0px;
+  right: 0px;
+  transition: 0.3s;
+  color: #0e263d;
+  background-color: #f3e654;
+  z-index: 10001;
+}
+.containerSlider > a.sendForm:hover {
+  transform: scale(1.2);
+  color: black;
+}
+.containerSlider > div {
+  position: absolute;
+  background-color: #f3e654;
+  border-radius: 50%;
+  padding: 15px;
+  top: 120px;
+  transition: 0.3s;
+  z-index: 10000;
+}
+.containerSlider > #nextSlide {
+  font-size: 30px;
+  right: 0;
+}
+.containerSlider > #previousSlide {
+  font-size: 30px;
+  left: 0;
+}
+
+.titleNew {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.nuevoTestimonio {
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+.nuevoTestimonio h2 {
+  font-size: 25px;
+  color: "";
+  align-items: "";
+  text-align: center;
+  text-decoration: "";
+  padding: 10px;
+  margin: "";
+}
+.nuevoTestimonio p {
+  font-size: 20px;
+  color: "";
+  align-items: "";
+  text-align: center;
+  text-decoration: "";
+  padding: 10px;
+  margin: 10px;
+}
+
+.footer {
+  padding: 30px;
+  margin: 0px;
+  background-color: black;
+}
+.footer p {
+  font-size: 20px;
+  color: white;
+  align-items: "";
+  text-align: center;
+  text-decoration: "";
+}
+
+.formulario {
+  margin: auto;
+  padding: 30px;
+  margin: "";
+}
+.formulario > div {
+  background-color: rgba(248, 250, 251, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: "";
+  align-content: center;
+  padding: 50px;
+  margin: 0px;
+  width: 500px;
+  margin: auto;
+}
+.formulario > div > input,
+.formulario > div > textarea,
+.formulario > div > div > input {
+  font-size: 25px;
+  color: "";
+  align-items: center;
+  text-align: "";
+  text-decoration: none;
+  padding: 10px;
+  margin: 3px;
+  box-shadow: 1px 1px 10px -2px grey;
+  border: none;
+  outline: none;
+  background: none;
+}
+.formulario > div > label {
+  padding: 10px;
+  margin: 30px 0px 0px 0px;
+  font-size: 25px;
+  color: "";
+  align-items: "";
+  text-align: "";
+  text-decoration: "";
+}
+.formulario > div > input {
+  width: 100%;
+}
+.formulario > div > textarea {
+  height: 200px;
+  width: 100%;
+}
+.formulario > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 105%;
+  margin-top: 10px;
+}
+.formulario > div > div > input {
+  background-color: #f3e654;
+  color: #164775;
+  width: 48%;
+  padding: 10px;
+  margin: 3px;
+  transition: 0.3s;
+}
+.formulario > div > div > input:hover {
+  background-color: #dbcb19;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    text-align: center;
+  }
+
+  #list-Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: "";
+  }
+  #list-Products li {
+    width: calc(100% / 3);
+    margin-bottom: 30px;
+  }
+
+  .titleTest {
+    text-align: center;
+  }
+
+  .containerSlider {
+    width: 100%;
+  }
+  .containerSlider > ul.slider > li > p {
+    margin: auto;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .formulario {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+  .formulario > div > textarea,
+.formulario > div > input,
+.formulario > div > label {
+    width: 80%;
+    margin: auto;
+  }
+  .formulario > div {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .formulario > div > div {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  .formulario > div > div > input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .titleNew {
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .nuevoTestimonio {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    text-align: center;
+  }
+
+  #list-Products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: "";
+  }
+  #list-Products li {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .titleTest {
+    text-align: center;
+  }
+
+  .containerSlider {
+    width: 100%;
+  }
+  .containerSlider > ul.slider > li > p {
+    margin: auto;
+    width: 60%;
+    font-size: 18px;
+  }
+
+  .formulario {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+  .formulario > div > textarea,
+.formulario > div > input,
+.formulario > div > label {
+    width: 80%;
+    margin: auto;
+  }
+  .formulario > div {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .formulario > div > div {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  .formulario > div > div > input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .titleNew {
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .nuevoTestimonio {
+    width: 100%;
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Georgia;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  background-color: #ebebeb;
+}/*# sourceMappingURL=styles.css.map */

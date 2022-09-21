@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "txtNombre": "Samsung Galaxy A32",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_630807-MLA45658531680_042021-O.webp",
+        "txtPrecio": "$44.999",
+        "txtDescripcion": "Samsung Galaxy A32 128 GB awesome black 4 GB RAM"
+    },
+    {
+        "id": 2,
+        "txtNombre": "Samsung Galaxy A52",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_845322-MLA45401851058_032021-O.webp",
+        "txtPrecio": "$57.835",
+        "txtDescripcion": "Samsung Galaxy A52 128 GB awesome white 6 GB RAM"
+    },
+    {
+        "id": 3,
+        "txtNombre": "Samsung Galaxy A21s",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_636461-MLA44333730841_122020-O.webp",
+        "txtPrecio": "$37.999",
+        "txtDescripcion": "Samsung Galaxy A21s 64 GB blanco 4 GB RAM"
+    },
+    {
+        "id": 4,
+        "txtNombre": "Motorola G30",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_738903-MLA45683797219_042021-O.webp",
+        "txtPrecio": "$35.999",
+        "txtDescripcion": "Moto G30 128 GB lila pastel 4 GB RAM"
+    },
+    {
+        "id": 5,
+        "txtNombre": "Motorola G20",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_924550-MLA46807628389_072021-O.webp",
+        "txtPrecio": "$28.999",
+        "txtDescripcion": "Moto G20 64 GB azul cielo 4 GB RAM"
+    },
+    {
+        "id": 6,
+        "txtNombre": "Motorola G100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_645703-MLA46248898134_062021-O.webp",
+        "txtPrecio": "$89.999",
+        "txtDescripcion": "Moto G100 128 GB azul nimbus 8 GB RAM"
+    },
+    {
+        "id": 7,
+        "txtNombre": "iPhone 11",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_645254-MLA32646972200_102019-O.webp",
+        "txtPrecio": "$182.673",
+        "txtDescripcion": "Apple iPhone 11 (64 GB) - Blanco"
+    },
+    {
+        "id": 8,
+        "txtNombre": "iPhone 12 Pro Max",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_633784-MLA46088610402_052021-O.webp",
+        "txtPrecio": "$319.999",
+        "txtDescripcion": "Apple iPhone 12 Pro Max (256 GB) - Azul pacífico"
+    },
+    {
+        "id": 9,
+        "txtNombre": "iPhone XR",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_794423-MLA31003091287_062019-O.webp",
+        "txtPrecio": "$152.474",
+        "txtDescripcion": "Apple iPhone XR 64 GB - Negro"
+    },
+    {
+        "id": 10,
+        "txtNombre": "Xiaomi Redmi Note 10",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_665543-MLA46274915705_062021-O.webp",
+        "txtPrecio": "$42.999",
+        "txtDescripcion": "Xiaomi Redmi Note 10 5G Dual SIM 128 GB gris grafito 4 GB RAM"
+    },
+    {
+        "id": 11,
+        "txtNombre": "Xiaomi Redmi Note 9S",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_873574-MLA44220191628_122020-O.webp",
+        "txtPrecio": "$56.439",
+        "txtDescripcion": "Xiaomi Redmi Note 9S Dual SIM 128 GB gris interestelar 6 GB RAM"
+    },
+    {
+        "id": 12,
+        "txtNombre": "Xiaomi Redmi Note 8",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_620994-MLA40022201594_122019-O.webp",
+        "txtPrecio": "$55.137",
+        "txtDescripcion": "Xiaomi Redmi Note 8 Pro Dual SIM 64 GB verde bosque 6 GB RAM"
+    }
+]

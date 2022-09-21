@@ -1,0 +1,50 @@
+@use "mixins";
+@use "colors";
+
+.formulario {
+    margin: auto;
+    @include mixins.padinMargin(30px, '');
+    >div {
+        background-color: rgba(#F8FAFB, 0.9);
+        @include mixins.flexBoxStyles(column, space-between, wrap, '', center);
+        @include mixins.padinMargin(50px, 0px);
+        width: 500px;
+        margin: auto;
+        >input,
+        >textarea,
+        >div>input {
+            @include mixins.textStyles(25px, '', center, '', none);
+            @include mixins.padinMargin(10px, 3px);
+            box-shadow: 1px 1px 10px -2px grey;
+            border: none;
+            outline: none;
+            background: none;
+        }
+        >label {
+            @include mixins.padinMargin(10px, 30px 0px 0px 0px);
+            @include mixins.textStyles(25px, '', '', '', '');
+        }
+        >input {
+            width: 100%;
+        }
+        >textarea {
+            height: 200px;
+            width: 100%;
+        }
+        >div {
+            @include mixins.flexBoxStyles(row, space-between, wrap, center, center);
+            width: 105%;
+            margin-top: 10px;
+            >input {
+                background-color: colors.$Fondo_Header_Oscurito;
+                color: colors.$ColorFuenteAzul;
+                width: 48%;
+                @include mixins.padinMargin(10px, 3px);
+                transition: .3s;
+                &:hover{
+                    background-color: #dbcb19;
+                }
+            }
+        }
+    }
+}

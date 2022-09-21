@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+
+    <body>
+        <%- include('components/_header'); %>
+
+        <main>
+            <h1 class="titleNew">El nuevo Testimonio fue agregado con éxito</h1>
+            <div class="nuevoTestimonio">
+                <h2>
+                    <%- testimonio.txtNombre %> <%- testimonio.txtApellido %>
+                </h2>
+                <p><%- testimonio.txtTestimonio %></p>
+                <p><%- testimonio.link %></p>
+            </div>
+        </main>
+
+        <footer class="footer"><%- include('components/_footer'); %></footer>
+    </body>
+</html>

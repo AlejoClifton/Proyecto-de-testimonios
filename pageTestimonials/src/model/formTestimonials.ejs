@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+
+    <body>
+        <%- include('components/_header'); %>
+        <main>
+            <form class="formulario" action="/sendForm" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        name="txtNombre"
+                        id="nombre"
+                        placeholder="Ingresar Nombre:"
+                        required
+                    />
+                    <label for="apellido">Apellido:</label>
+                    <input
+                        type="text"
+                        name="txtApellido"
+                        id="apellido"
+                        placeholder="Ingresar Nombre:"
+                        required
+                    />
+                    <label for="link">Linkedin:</label>
+                    <input
+                        type="url"
+                        name="link"
+                        id="link"
+                        placeholder="Ingresar Linkedin:"
+                        required
+                    />
+                    <label for="testimonio">Testimonio:</label>
+                    <textarea
+                        name="txtTestimonio"
+                        id="testimonio"
+                        maxlength="65"
+                        placeholder="Ingresar Testimonio:"
+                    ></textarea>
+                    <div>
+                        <input class="btnReset" type="reset" value="Cancelar"></input>
+                        <input class="btnSubmit" type="submit" value="Enviar"></input>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer"><%- include('components/_footer'); %></footer>
+    </body>
+</html>

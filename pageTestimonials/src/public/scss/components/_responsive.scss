@@ -1,0 +1,136 @@
+@use "mixins";
+@use "colors";
+
+@media screen and (max-width: 800px) {
+    .title {
+        text-align: center;
+    }
+
+    #list-Products {
+        @include mixins.flexBoxStyles(row, center, wrap, center, "");
+        li {
+            width: calc(100% / 3);
+            margin-bottom: 30px;
+        }
+    }
+    .titleTest {
+        text-align: center;
+    }
+    .containerSlider {
+        width: 100%;
+
+        > ul.slider {
+            > li {
+                > p {
+                    margin: auto;
+                    width: 80%;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .formulario {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0px;
+        > div > textarea,
+        > div > input,
+        > div > label {
+            width: 80%;
+            margin: auto;
+        }
+        > div {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        > div > div {
+            width: 100%;
+            margin-top: 30px;
+            @include mixins.flexBoxStyles(column, center, wrap, center, center);
+            > input {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .titleNew {
+        margin: auto;
+        margin-top: 50px;
+        width: 90%;
+        text-align: center;
+    }
+    .nuevoTestimonio {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+    }
+
+    #list-Products {
+        @include mixins.flexBoxStyles(column, center, wrap, center, "");
+        li {
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+    .titleTest {
+        text-align: center;
+    }
+    .containerSlider {
+        width: 100%;
+
+        > ul.slider {
+            > li {
+                > p {
+                    margin: auto;
+                    width: 60%;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .formulario {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0px;
+        > div > textarea,
+        > div > input,
+        > div > label {
+            width: 80%;
+            margin: auto;
+        }
+        > div {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        > div > div {
+            width: 100%;
+            margin-top: 30px;
+            @include mixins.flexBoxStyles(column, center, wrap, center, center);
+            > input {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .titleNew {
+        margin: auto;
+        margin-top: 50px;
+        width: 90%;
+        text-align: center;
+    }
+    .nuevoTestimonio {
+        width: 100%;
+    }
+}
